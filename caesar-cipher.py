@@ -9,7 +9,8 @@ def caesar_encode(message, shift):
         if char == ' ':
             caesar_message += char
         if char in letters:
-            caesar_message += (letters[letters.index(char)+shift])
+            shifted_letter = letters[letters.index(char)+shift]
+            caesar_message += shifted_letter
     print(caesar_message)
 
 caesar_encode(message, shift)
