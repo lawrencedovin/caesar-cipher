@@ -1,3 +1,5 @@
+from art import logo
+
 letters = [chr(letter) for letter in range(ord('a'), ord('z') + 1)]
 choice = True
 
@@ -9,7 +11,9 @@ def caesar_cipher(message, shift, choice):
             caesar_message += shifted_letter
         else:
             caesar_message += char
-    print(caesar_message)
+    print(f'Here is the {choice}d message: {caesar_message}')
+
+print(logo)
 
 while(choice):
     choice = input("Type 'encode' to encrypt, type 'decode' to decrypt > ").lower()
