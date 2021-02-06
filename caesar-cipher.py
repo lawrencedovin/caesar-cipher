@@ -22,9 +22,7 @@ while(choice):
         shift = int(input('Type the shift number > '))
         caesar_cipher(message, shift, choice)
         try_again = input("Try again? Type 'yes' or 'no' > ").lower()
-        if try_again == 'yes':
-            continue
-        else: 
-            break  
+        if try_again != 'yes':
+            break
     else:
         break
