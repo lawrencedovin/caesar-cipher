@@ -6,11 +6,11 @@ shift = int(input('how much do you want to shift the letters?: '))
 def caesar_encode(message, shift):
     caesar_message = ''
     for char in message:
-        if char == ' ':
-            caesar_message += char
         if char in letters:
             shifted_letter = letters[letters.index(char)+shift]
             caesar_message += shifted_letter
+        else:
+            caesar_message += char
     print(caesar_message)
 
 caesar_encode(message, shift)
