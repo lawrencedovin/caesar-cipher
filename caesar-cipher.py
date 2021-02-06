@@ -18,7 +18,7 @@ print(logo)
 while(choice):
     choice = input("Type 'encode' to encrypt, type 'decode' to decrypt > ").lower()
     if choice == 'encode' or choice == 'decode':
-        message = input('Type your message > ')
+        message = input('Type your message > ').lower()
         shift = int(input('Type the shift number > '))
         caesar_cipher(message, shift, choice)
         try_again = input("Try again? Type 'yes' or 'no' > ").lower()
